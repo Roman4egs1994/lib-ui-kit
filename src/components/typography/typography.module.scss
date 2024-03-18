@@ -1,0 +1,139 @@
+[data-theme='light']  .colorDefault {
+  color: var(--color-dark-900);
+}
+
+[data-theme='dark'] .colorDefault{
+  color: var(--dark-theme-color-text);
+}
+
+.light100 {
+  color: var(--color-light-100);
+}
+
+.darkGray {
+  color: var(--color-dark-500);
+}
+
+.gray {
+  color: var(--color-dark-100);
+}
+
+.danger {
+  color: var(--color-danger-300);
+}
+
+.Large {
+  font-family: Roboto, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 36px; /* 138.462% */
+}
+
+.LargeLite {
+  font-family: Roboto, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px; /* 138.462% */
+}
+
+.H1 {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 36px; /* 180% */
+}
+
+.H2 {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px; /* 133.333% */
+}
+
+.H3 {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px; /* 150% */
+}
+
+.H4 {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 22px; /* 150% */
+}
+
+
+.Body1 {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px; /* 150% */
+}
+
+.Subtitle1 {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px; /* 150% */
+}
+
+.Body2 {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px; /* 171.429% */
+}
+
+.Subtitle2 {
+  font-family: Roboto, serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px; /* 171.429% */
+}
+
+.Caption {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px; /* 133.333% */
+}
+
+.Overline {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 16px; /* 133.333% */
+}
+
+.Link1 {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px; /* 171.429% */
+  color: var(--color-info-500);
+  text-decoration-line: underline;
+}
+
+.Link2 {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px; /* 133.333% */
+  color: var(--color-info-500);
+  text-decoration-line: underline;
+}

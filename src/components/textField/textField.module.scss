@@ -1,0 +1,286 @@
+.textField {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 284px;
+  height: 36px;
+  padding: 6px 12px;
+
+  color: var(--color-dark-900);
+
+  background-color: transparent;
+  border: 1px solid var(--color-dark-300);
+  border-radius: 2px;
+  outline: none;
+
+  transition: 0.2s ease-out;
+
+  &::placeholder {
+    color: #4c4c4c;
+  }
+
+  &.withShowPassword {
+    padding-right: 40px;
+  }
+
+  &.withSearchType {
+    padding: 0 40px;
+  }
+
+  &.withTriggerEnd {
+    padding-right: 40px;
+  }
+
+  &.withClear {
+    padding-right: 30px;
+  }
+
+  &:disabled {
+    color: var(--color-dark-300);
+    border: 1px solid var(--color-dark-300);
+  }
+
+  &:disabled::placeholder {
+    color: var(--color-dark-300);
+  }
+
+  &:focus-within,
+  &:focus-visible {
+    color: #000;
+    border: 1px solid var(--color-info-700);
+    outline: 1px solid var(--color-info-700);
+  }
+
+  &:hover:not(&:disabled, .errorText, :focus) {
+    background-color: transparent;
+    border: 1px solid var(--color-dark-100);
+    transition: 0.2s ease-out;
+  }
+
+
+}
+
+.textFieldWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 284px;
+
+  &.fullwidth {
+    width: 100%;
+    max-width: 100%
+  }
+
+  /** label  */
+  .labelText {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px; /* 171.429% */
+    display: inline-block;
+    width: auto;
+    margin-left: 2px;
+    color: var(--color-dark-300);
+  }
+
+  .labelWithDisabled {
+    opacity: 0.5;
+  }
+
+  /** textField */
+  .textField.fullwidth {
+    min-width: 100%;
+  }
+
+  .errorText {
+    color: var(--color-danger-300);
+    border: 1px solid var(--color-danger-300);
+
+    &.errorText::placeholder {
+      color: var(--color-danger-300);
+    }
+  }
+
+  .errorText:focus-visible {
+    color: var(--color-danger-300);
+    border: 1px solid var(--color-danger-300);
+    outline: 1px solid var(--color-danger-300);
+  }
+
+  .errorText:disabled {
+    color: var(--color-danger-300);
+    opacity: 0.5;
+    border: 1px solid var(--color-danger-300);
+    outline: 1px solid var(--color-danger-300);
+  }
+
+  .error {
+    position: absolute;
+    bottom: -23px;
+
+    display: flex;
+
+    width: 100%;
+
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px; /* 150% */
+    font-family: Roboto, serif;
+    font-size: 12px;
+    color: var(--color-danger-300);
+  }
+
+  .errorWithDisabled {
+    opacity: 0.5;
+  }
+}
+
+.textFieldWrapper:not(:focus-within) .btnClear {
+  display: none;
+}
+
+.triggerEnd{
+  cursor: pointer;
+
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+
+  display: grid;
+  place-items: center;
+
+  font-size: 15px;
+
+  &.withLabel {
+    top: 70%;
+  }
+
+  &.triggerEndWithFullwidth {
+    right: 0.5%;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+.showPassword {
+  cursor: pointer;
+
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+
+  display: grid;
+  place-items: center;
+
+  font-size: 15px;
+
+  &.withLabel {
+    top: 70%;
+  }
+
+  &.showPassWithFullwidth {
+    right: 0.5%;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .showPassBtn {
+    &:disabled {
+      cursor: auto;
+      opacity: 0.5;
+    }
+  }
+}
+
+.btnClear {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+
+  display: grid;
+  place-items: center;
+
+  font-size: 15px;
+
+  &.withLabel {
+    top: 70%;
+  }
+}
+
+.btnSearch {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+
+  display: grid;
+  place-items: center;
+
+  font-size: 15px;
+
+  &.btnSearchWithFullWidth {
+    left: 5px;
+  }
+
+  &.withLabel {
+    top: 70%;
+  }
+
+  &:disabled {
+    cursor: text;
+  }
+}
+
+.textFieldWrapper:focus-within .iconSearch {
+  color: var(--color-light-100) !important;
+}
+
+/** clear default cansel btn  at TextField */
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+  display: none;
+}
+
+/** Resetting CSS the hint menu */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  //border: 0;
+  -webkit-text-fill-color: var(--dark-theme-label-color-text);
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+}
+
+
+//** DARK THEME */
+[data-theme='dark'] .textField{
+  color: var(--dark-theme-color-text);
+  &:disabled {
+    color: var(--color-dark-300);
+    border: 1px solid var(--color-dark-300);
+  }
+}
+[data-theme='dark'] .labelText{
+  color: var(--dark-theme-label-color-text);
+}

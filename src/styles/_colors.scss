@@ -1,0 +1,116 @@
+[data-theme='light'] {
+  --background-color: var(--light-theme-background-color);
+  --color: var(--color-dark-900)
+}
+
+[data-theme='dark'] {
+  --background-color: var(--dark-theme-background-color);
+  --color: var(--dark-theme-color-text)
+}
+
+:root {
+  // accent
+  --color-accent-100: #bea6ff;
+  --color-accent-300: #a280ff;
+  --color-accent-500: #8c61ff;
+  --color-accent-700: #704ecc;
+  --color-accent-900: #382766;
+
+  // success
+  --color-success-100: #80ffbf;
+  --color-success-300: #22e584;
+  --color-success-500: #14cc70;
+  --color-success-600: #009e66;
+  --color-success-700: #0f9954;
+  --color-success-900: #0a6638;
+
+  // danger
+  --color-danger-100: #ff8099;
+  --color-danger-300: #f23d61;
+  --color-danger-500: #cc1439;
+  --color-danger-700: #990f2b;
+  --color-danger-900: #660a1d;
+
+  // warning
+  --color-warning-100: #ffd073;
+  --color-warning-300: #e5ac39;
+  --color-warning-500: #d99000;
+  --color-warning-700: #960;
+  --color-warning-900: #640;
+
+  // info
+  --color-info-100: #73a5ff;
+  --color-info-300: #4c8dff;
+  --color-info-500: #397df6;
+  --color-info-700: #2f68cc;
+  --color-info-900: #234e99;
+
+  // light
+  --color-light-100: #fff;
+  --color-light-200: rgb(239 239 239 / 25%);
+  --color-light-250: rgb(239 239 239 / 40%);
+  --color-light-300: #f9f7ff;
+  --color-light-500: #f4f2fa;
+  --color-light-600: #e7e4ee;
+  --color-light-700: #dcdae0;
+  --color-light-900: #c3c1c7;
+
+  // dark
+  --color-dark-50: #a2a2a2;
+  --color-dark-100: #808080;
+  --color-dark-200: #646464;
+  --color-dark-300: #4c4c4c;
+  --color-dark-500: #333;
+  --color-dark-700: #171717;
+  --color-dark-900: #000;
+
+
+  //button
+  --color-button-border: #7e7e7e;
+
+  //input
+  --color-textField-disabled: rgb(220 220 220 / 29%);
+
+  //border
+  --border-color-light: #ccc;
+
+  //light-theme
+  --light-theme-background-color: #fff;
+
+
+  /** ---------------------------------------------  DARK-THEME------------------------------------------- */
+
+  //DARK-THEME-BACKGROUND
+  --dark-theme-background-color: #0d1117;
+  --dark-theme-background-color-hover: #262626;
+  --dark-theme-background-color-block: #13151d;
+  --dark-theme-background-color-dialog: #161b22;
+  --dark-theme-background-color-header: #010409;
+  --dark-theme-background-color-header-active-link: #0d1117;
+  --dark-theme-bacground-color-other-element:#757575;
+
+  //DARK-THEME-BORDER
+  --dark-theme-border-color: rgb(239 239 239 / 25%);
+  --dark-theme-border-color-hover: rgb(239 239 239 / 40%);
+  --dark-theme-border-color-green: rgb(31 196 96 / 65%);
+
+  //DARK-THEME-COLOR-TEXT
+  --dark-theme-color-text: #f3f3f3;
+  --dark-theme-color-text-disabled: #dcdae0;
+  --dark-theme-color-text-auth:#949494;
+
+  //DARK-THEME-ICON-BTN
+  --dark-theme-button-icon-color: #c3c1c7;
+  --dark-theme-button-icon-color-hover: #dcdae0;
+  --dark-theme-button-color-disabled: rgb(204 204 204 / 59%);
+
+  //DARK-THEME-TEXT-FIELD
+  --dark-theme-label-color-text:#808080;
+  --autofill-text-color-light: #000; /* Цвет текста для светлой темы */
+  --autofill-background-light: #fff; /* Цвет фона для светлой темы */
+  --autofill-text-color-dark: #fff; /* Цвет текста для темной темы */
+  --autofill-background-dark: #333; /* Цвет фона для темной темы */
+
+
+  /** ---------------------------------------------  DARK-THEME-END ------------------------------------------- */
+}
